@@ -1,0 +1,5 @@
+src/.vs/
+src/Alienlab.OttersHub/bin/
+src/Alienlab.OttersHub/obj/
+*.pubxml
+src/packages/
