@@ -43,6 +43,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Data\DataProviders\FilePropertiesJsonDataProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -63,20 +64,29 @@
     <Content Include="App_Config\Include\zzz\DisableEventQueue.config" />
     <Content Include="App_Config\Include\zzz\JsonDataProvider.Development.config" />
     <Content Include="App_Config\Include\Sitecore.JsonDataProvider.Core.config" />
-    <Content Include="App_Config\Include\Sitecore.JsonDataProvider.Master.config" />
+    <Content Include="App_Config\Include\Sitecore.JsonDataProvider.Master.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="App_Config\Prefetch\Common.config" />
     <Content Include="App_Config\Prefetch\Core.config" />
     <Content Include="App_Config\Prefetch\Master.config" />
+    <Content Include="App_Config\Include\zzz\FileSystemPropertiesProvider.config" />
+    <None Include="Properties\PublishProfiles\local.pubxml" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Sitecore.JsonDataProvider, Version=1.0.7.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Sitecore.JsonDataProvider.1.0.7\lib\Sitecore.JsonDataProvider.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Sitecore.Kernel">
+      <HintPath>..\..\..\..\wwwroot\Sitecore.NoSQL\Website\bin\Sitecore.Kernel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Sitecore.Support.414299">
       <HintPath>..\libaries\Sitecore.Support.414299.dll</HintPath>
     </Reference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
