@@ -64,6 +64,9 @@
     <Content Include="App_Config\Include\zzz\JsonDataProvider.Development.config" />
     <Content Include="App_Config\Include\Sitecore.JsonDataProvider.Core.config" />
     <Content Include="App_Config\Include\Sitecore.JsonDataProvider.Master.config" />
+    <Content Include="App_Config\Prefetch\Common.config" />
+    <Content Include="App_Config\Prefetch\Core.config" />
+    <Content Include="App_Config\Prefetch\Master.config" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Sitecore.JsonDataProvider, Version=1.0.7.0, Culture=neutral, processorArchitecture=MSIL">
