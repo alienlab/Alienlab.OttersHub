@@ -48,7 +48,6 @@
   <ItemGroup>
     <Content Include="App_Config\Include\zzz\DisableWebDav.config" />
     <Content Include="App_Config\Include\zzz\RemoveWebDatabase.config" />
-    <Content Include="App_Config\Include\zzz\JsonDataProvider.config" />
     <Content Include="App_Config\Include\zzz\Sitecore.Support.328877.config" />
     <Content Include="App_Config\Include\zzz\Sitecore.Support.368505.415156.config" />
     <Content Include="App_Config\Include\zzz\Sitecore.Support.414299.config" />
@@ -62,6 +61,9 @@
     <Content Include="App_Config\Include\zzz\RemoveCoreIndex.config" />
     <Content Include="App_Config\Include\zzz\RemoveLegacyIndex.config" />
     <Content Include="App_Config\Include\zzz\DisableEventQueue.config" />
+    <Content Include="App_Config\Include\zzz\JsonDataProvider.Development.config" />
+    <Content Include="App_Config\Include\Sitecore.JsonDataProvider.Core.config" />
+    <Content Include="App_Config\Include\Sitecore.JsonDataProvider.Master.config" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Sitecore.JsonDataProvider, Version=1.0.7.0, Culture=neutral, processorArchitecture=MSIL">
