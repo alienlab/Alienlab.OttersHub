@@ -57,7 +57,7 @@
   <ItemGroup>
     <Content Include="App_Config\Include\Sitecore.JsonDataProvider.config" />
     <Content Include="packages.config" />
-    <Content Include="App_Data\master.json" />
+    <Content Include="App_Data\master-otters-hub.json" />
     <Content Include="App_Config\Include\zzz\RemoveCoreIndex.config" />
     <Content Include="App_Config\Include\zzz\RemoveLegacyIndex.config" />
     <Content Include="App_Config\Include\zzz\DisableEventQueue.config" />
@@ -69,15 +69,18 @@
     <Content Include="App_Config\Prefetch\Core.config" />
     <Content Include="App_Config\Prefetch\Master.config" />
     <Content Include="App_Config\Include\zzz\FileSystemPropertiesProvider.config" />
-    <None Include="Properties\PublishProfiles\local.pubxml" />
+    <Content Include="App_Config\Include\zzz\OttersHub.Development.config" Condition=" '$(Configuration)' == 'Debug' " />
+    <Content Include="App_Config\Include\zzz\DoNotTrack.config" />
+    <Content Include="App_Config\Include\zzz\OttersHub.config" />
+    <None Include="Properties\PublishProfiles\Development.pubxml" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Sitecore.JsonDataProvider, Version=1.0.7.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Sitecore.JsonDataProvider.1.0.7\lib\Sitecore.JsonDataProvider.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Sitecore.Kernel, Version=8.0.5245.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SC.Sitecore.Kernel.8.0.0.150812\lib\Sitecore.Kernel.dll</HintPath>
+    <Reference Include="Sitecore.Kernel, Version=8.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SC.Sitecore.Kernel.8.1.0.151003\lib\Sitecore.Kernel.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Sitecore.Support.414299, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
