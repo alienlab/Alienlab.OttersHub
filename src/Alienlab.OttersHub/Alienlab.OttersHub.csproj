@@ -57,12 +57,10 @@
   <ItemGroup>
     <Content Include="App_Config\Include\Sitecore.JsonDataProvider.config" />
     <Content Include="packages.config" />
-    <Content Include="App_Config\Include\zzz\KeoStudio.config" />
     <Content Include="App_Data\master.json" />
     <Content Include="App_Config\Include\zzz\RemoveCoreIndex.config" />
     <Content Include="App_Config\Include\zzz\RemoveLegacyIndex.config" />
     <Content Include="App_Config\Include\zzz\DisableEventQueue.config" />
-    <Content Include="App_Config\Include\zzz\JsonDataProvider.Development.config" />
     <Content Include="App_Config\Include\Sitecore.JsonDataProvider.Core.config" />
     <Content Include="App_Config\Include\Sitecore.JsonDataProvider.Master.config">
       <SubType>Designer</SubType>
@@ -78,15 +76,15 @@
       <HintPath>..\packages\Sitecore.JsonDataProvider.1.0.7\lib\Sitecore.JsonDataProvider.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Sitecore.Kernel">
-      <HintPath>..\..\..\..\wwwroot\Sitecore.NoSQL\Website\bin\Sitecore.Kernel.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="Sitecore.Kernel, Version=8.0.5245.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SC.Sitecore.Kernel.8.0.0.150812\lib\Sitecore.Kernel.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Sitecore.Support.414299">
-      <HintPath>..\libaries\Sitecore.Support.414299.dll</HintPath>
+    <Reference Include="Sitecore.Support.414299, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Support.414299.7.2.0\lib\Sitecore.Support.414299.dll</HintPath>
+      <Private>True</Private>
     </Reference>
   </ItemGroup>
-  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
