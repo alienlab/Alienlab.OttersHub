@@ -45,7 +45,6 @@
   <ItemGroup>
     <Compile Include="Data\DataProviders\FilePropertiesJsonDataProvider.cs" />
     <Compile Include="Hooks\ReplaceMediaCreator.cs" />
-    <Compile Include="Linq\Extensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\Media\SiteMediaCreator.cs" />
   </ItemGroup>
