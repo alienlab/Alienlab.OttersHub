@@ -43,14 +43,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Data\DataProviders\FilePropertiesJsonDataProvider.cs" />
     <Compile Include="Hooks\ReplaceMediaCreator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\Media\SiteMediaCreator.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\zzz\DisableWebDav.config" />
-    <Content Include="App_Config\Include\zzz\RemoveWebDatabase.config" />
+    <Content Include="App_Config\Include\zzz\OttersHub.DisableWebDav.config" />
     <Content Include="App_Config\Include\zzz\Sitecore.Support.328877.config" />
     <Content Include="App_Config\Include\zzz\Sitecore.Support.368505.415156.config" />
     <Content Include="App_Config\Include\zzz\Sitecore.Support.414299.config" />
@@ -59,10 +57,9 @@
   <ItemGroup>
     <Content Include="App_Config\Include\Sitecore.JsonDataProvider.config" />
     <Content Include="packages.config" />
-    <Content Include="App_Data\master-otters-hub.json" />
-    <Content Include="App_Config\Include\zzz\RemoveCoreIndex.config" />
-    <Content Include="App_Config\Include\zzz\RemoveLegacyIndex.config" />
-    <Content Include="App_Config\Include\zzz\DisableEventQueue.config" />
+    <Content Include="App_Config\Include\zzz\OttersHub.RemoveCoreIndex.config" />
+    <Content Include="App_Config\Include\zzz\OttersHub.RemoveLegacyIndex.config" />
+    <Content Include="App_Config\Include\zzz\OttersHub.DisableEventQueue.Development.config" Condition=" '$(Configuration)' == 'Debug' " />
     <Content Include="App_Config\Include\Sitecore.JsonDataProvider.Core.config" />
     <Content Include="App_Config\Include\Sitecore.JsonDataProvider.Master.config">
       <SubType>Designer</SubType>
@@ -70,19 +67,24 @@
     <Content Include="App_Config\Prefetch\Common.config" />
     <Content Include="App_Config\Prefetch\Core.config" />
     <Content Include="App_Config\Prefetch\Master.config" />
-    <Content Include="App_Config\Include\zzz\FileSystemPropertiesProvider.config" />
-    <Content Include="App_Config\Include\zzz\OttersHub.Development.config" Condition=" '$(Configuration)' == 'Debug' " />
-    <Content Include="App_Config\Include\zzz\DoNotTrack.config" />
-    <Content Include="App_Config\Include\zzz\OttersHub.config" />
+    <Content Include="App_Config\Include\zzz\OttersHub.JsonDataProvider.Development.config" Condition=" '$(Configuration)' == 'Debug' " />
+    <Content Include="App_Config\Include\zzz\OttersHub.DoNotTrack.config" />
+    <Content Include="App_Config\Include\zzz\OttersHub.FileBasedMedia.config" />
     <None Include="Properties\PublishProfiles\Development.pubxml" />
+    <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="Alienlab.Web.Security, Version=2.0.0.0, Culture=neutral, PublicKeyToken=e940721bc239f3b1, processorArchitecture=MSIL">
+      <HintPath>..\packages\Alienlab.Web.Security.2.0.0.0\lib\Alienlab.Web.Security.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Sitecore.JsonDataProvider, Version=1.0.7.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Sitecore.JsonDataProvider.1.0.7\lib\Sitecore.JsonDataProvider.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Sitecore.Kernel, Version=8.0.5245.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\SC.Sitecore.Kernel.8.0.0.150812\lib\Sitecore.Kernel.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
       <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.Support.414299, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -91,6 +93,9 @@
     </Reference>
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
